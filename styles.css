@@ -1,1 +1,13 @@
-
+#yt-player-clock {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 4px 6px;
+    border-radius: 4px;
+    z-index: 999;
+    pointer-events: none;
+}
