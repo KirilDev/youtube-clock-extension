@@ -1,17 +1,18 @@
 {
-    "manifest_version": 3,
-    "name": "YouTube Player Clock",
-    "version": "1.0",
-    "description": "Displays the current time on the YouTube video player.",
-    "content_scripts": [
-        {
-            "matches": ["*://*.youtube.com/*"],
-            "js": ["content.js"],
-            "css": ["styles.css"]
-        }
-    ],
-    "icons": {
-        "48": "",
-        "128": ""
+  "manifest_version": 2,
+  "name": "YouTube Player Clock",
+  "version": "1.0",
+  "description": "Displays the current time on the YouTube video player.",
+  "permissions": ["*://*.youtube.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_idle"
     }
+  ],
+  "icons": {
+    "48": "48.png"
+  }
 }
