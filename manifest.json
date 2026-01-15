@@ -1,1 +1,17 @@
-
+{
+    "manifest_version": 3,
+    "name": "YouTube Player Clock",
+    "version": "1.0",
+    "description": "Displays the current time on the YouTube video player.",
+    "content_scripts": [
+        {
+            "matches": ["*://*.youtube.com/*"],
+            "js": ["content.js"],
+            "css": ["styles.css"]
+        }
+    ],
+    "icons": {
+        "48": "",
+        "128": ""
+    }
+}
